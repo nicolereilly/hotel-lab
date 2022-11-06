@@ -29,68 +29,65 @@
       <h1>Adopt Leo for the Day!!!</h1>
       <h1>Sign up HERE</h1>
     </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="offset-md-1 col-md-6">
+        <h1 class="solid-bg">Apply Here!</h1>
+      </div>
+    </div>
+    <div class="row">
+            <div class="col-md-5 offset-md-1 tab-content">
+                <div class="tab-pane active container-fluid card" id="dev-stuff">
 
-    <form>
-      <div class="form-group"> <!--Text-->
-        <label for="exampleFormControlInput1">Name</label>
-        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="John Smith">
-      </div>
-      <div class="form-group"> <!--Email-->
-        <label for="exampleFormControlInput2">Email address</label>
-        <input type="email" class="form-control" id="exampleFormControlInput2" placeholder="name@example.com">
-      </div>
-      <div class="form-group"> <!--Text-->
-        <label for="exampleFormControlInput3">Address</label>
-        <input type="address" class="form-control" id="exampleFormControlInput3" placeholder="1 Harrison Plaza, Florence, Alabama 35632">
-      </div>
+                    <div class="card-body">
+                      <form>
+                          <label for="name"> First and Last Name:</label>
+                          <input type="text" id="name" name="name" placeholder="John Smith">
+                        <br><br>
+                          <label for="email">Email address:</label>
+                          <input type="email" id="email" placeholder="name@example.com">
+                        <br><br>
+                        <label for="phone">Phone Number</label>
+                        <input type="number" id="phone" placeholder="123-456-7890">
+                        <br><br>
+                        <label for="date">Date available:</label>
+                        <input type="date" id="date" placeholder="mm/dd/yyyy">
+                        <br><br>
+                        <label for="time">Time:</label>
+                        <input type="time" id="time" placeholder="12:00 PM">
+                        <br><br>
+                        <label for="age">Select your age</label>
+                        <select class="form-control" id="age">
+                          <option>SELECT</option>
+                          <option>0-15</option>
+                          <option>15-25</option>
+                          <option>26-36</option>
+                          <option>37-47</option>
+                          <option>47-57</option>
+                          <option>58+</option>
+                        </select>
+                        <p>Will you be available for pickup / dropoff?</p>
+                        <input type="radio" name="availablity" value="Yes" id="Yes" required>
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="availablity" value="No" id="No" required>
+                        <label for="no">No</label>
+                        <input type="radio" name="availablity" value="Possibly" id="Possibly" required>
+                        <label for="Possibly">Possibly</label>
+                        <p><button id="btn">Show Selected Value</button></p>
+                        <br>
+                        <p id="output"></p>
+                        <label for="explain">Why should you get to adopt Leo for the Day?</label>
+                        <textarea class="form-control" id="explain" rows="3"></textarea>
 
-
-      <div class="form-group"> <!--Dropdown-->
-        <label for="exampleFormControlSelect1">Select your age</label>
-        <select class="form-control" id="exampleFormControlSelect1">
-          <option>SELECT</option>
-          <option>0-15</option>
-          <option>15-25</option>
-          <option>26-36</option>
-          <option>37-47</option>
-          <option>47-57</option>
-          <option>58+</option>
-        </select>
-      
-      </div>
-      <div> <!--Select & Radio-->
-        <br>
-        <p>Will you be available for pickup / dropoff?</p>
-        <div> <!--Yes-->
-          <input type="radio" name="availablity" value="Yes" id="Yes" required>
-          <label for="yes">Yes</label>
-        </div>
-        <div> <!--No-->
-          <input type="radio" name="availablity" value="No" id="No" required>
-          <label for="no">No</label>
-        </div>
-        <div> <!--Possibly-->
-          <input type="radio" name="availablity" value="Possibly" id="Possibly" required>
-          <label for="Possibly">Possibly</label>
-        </div>
-        <p>
-          <button id="btn">Show Selected Value</button>
-        </p>
-        <br>
-        <p id="output"></p>
-      </div>
-      <div class="form-group"> <!--text area-->
-        <label for="exampleFormControlTextarea1">Why should you get to adopt Leo for the Day?</label>
-        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-      </div>
-      <div> <!--Checkbox-->
-        Check if you are ready for the best day of your LIFE: <input type="checkbox" id="myCheck" onclick="myFunction()">
-        <p id="show" style="display:none">YES! Click Submit Below!!!!</p>
-      </div>
-
-
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+                        Check if you are ready for the best day of your LIFE: <input type="checkbox" id="myCheck" onclick="myFunction()">
+                        <p id="show" style="display:none">YES! Click Submit Below!!!!</p>
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+   
+                      </form>
+                  </div>
     
 
     <div class="card-footer"><!--footer -->
