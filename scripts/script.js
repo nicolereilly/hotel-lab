@@ -1,25 +1,26 @@
-$(function() {
+$(function () {
+  //what radio value did they select?
 
-  $(document).ready(function () {
-    console.log("doc is ready");
-})
-  
+  $("input[type=radio]").on("change", function () {
+    // var $this = $(this);
+    // if ($this.is(":checked")) alert("a");
 
-$("#btn").on("click", () => {
-  console.log("here");
-  let selectedOption;
-  console.log("val" + selectedOption);
-  if ($("input:radio[name='availablity']").is(":checked")) {
-    selectedOption = $("input[name='availablity']:checked").val();
-    // show the output:
-  }
-  output.innerText = selectedOption
-    ? `You selected ${selectedOption}`
-    : `You haven't selected any availablity`;
+    let radioChoice = $("input[type=radio]:checked").val(); // A or B
+
+    if (radioChoice === "A") {
+      $("#letterWordsSelect")
+        .empty()
+        .append(`<option value="banana">S</option>`)
+        .append(`<option value="brains">M</option>`)
+        .append(`<option value="bbq">L</option>`);
+    } else if (radioChoice === "B") {
+      //`<option value="${optValue}">${optText}</option>`
+
+      $("#letterWordsSelect")
+        .empty()
+        .append(`<option value="banana">You cannot Adopt Leo :( </option>`)
+    } else {
+      alert("do default stuff");
+    }
+  });
 });
-
-
-
-
-});
-    
